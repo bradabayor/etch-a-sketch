@@ -1,0 +1,6 @@
+.pixel {
+	display: inline-block;
+	background-color: pink;
+	width: 30px;
+	height: 30px;
+}
