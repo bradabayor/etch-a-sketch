@@ -1,14 +1,29 @@
 const container = document.querySelector('.container');
+var linebreak = document.createElement("br");
 
-let toAdd = document.createDocumentFragment();
+let addDiv = document.createDocumentFragment();
 
-for (var i = 0; i < 16; i++) {
-	var newDiv = document.createElement("div");
-	newDiv.id = "pixel" + (i + 1);
-	newDiv.className = "pixel";
-	toAdd.appendChild(newDiv);
+for (var i = 0; i < 16; i++) {		
+	for (var j = 0; j < 16; j++) {
+	var div = document.createElement("div");
+	div.className = "pixel";
+	addDiv.appendChild(div);
+	}
+	container.appendChild(addDiv);
+	var linebreak = document.createElement("br");
+	container.appendChild(linebreak);
 }
 
-container.appendChild(toAdd);
+var pixels = document.getElementsByClassName("pixel");
+for (i = 0; i < pixels.length; i++) {
+	pixels[i].addEventListener("mouseover", function() {
+		this.style.backgroundColor = "black";
+		});
+}
+
+
+
+
+
 
 

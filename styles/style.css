@@ -3,4 +3,10 @@
 	background-color: pink;
 	width: 30px;
 	height: 30px;
+	margin-top: -4px;
 }
+
+.drawn {
+	background-color: black;
+}
+
