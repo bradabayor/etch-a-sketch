@@ -1,9 +1,16 @@
+.container {
+	width: 480px;
+	height: 480px;
+	margin: auto;
+	border: 1px solid black;
+}
+
 .pixel {
 	display: inline-block;
 	background-color: pink;
 	width: 30px;
 	height: 30px;
-	margin-top: -4px;
+	vertical-align: top;
 }
 
 .drawn {
