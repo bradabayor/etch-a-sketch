@@ -1,16 +1,47 @@
+body {
+	background-color: black;
+	font-family: 'Assistant', sans-serif;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	background-color: white;
+	font-size: 12px;
+	color: black;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+button:hover {
+	background-color: LightGrey;
+	font-weight: bold;
+}
+
+button:focus { outline-style: none; }
+
 .container {
+	line-height: 0;
+}
+
+.canvas {
+	display: block;
 	width: 480px;
 	height: 480px;
-	margin: auto;
-	border: 1px solid black;
+}
+
+.statusbar {
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-top: 40px;
 }
 
 .pixel {
 	display: inline-block;
-	background-color: pink;
-	width: 30px;
-	height: 30px;
-	vertical-align: top;
+	background-color: white;
+	line-height: 0;
 }
 
 .drawn {
